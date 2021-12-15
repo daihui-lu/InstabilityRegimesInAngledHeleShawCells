@@ -1,1 +1,0 @@
-aveVel  0.001135;endChannel  0.900000;Amplitudes  1(0.2);
