@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=130:30:00 
+#PBS -l naccesspolicy=shared
+#PBS -q tmnt
+
+cd $PBS_O_WORKDIR
+/bin/hostname
+
+module load gcc/4.8.5 openmpi/2.1.0 #openfoam/5.0
+source /apps/cent7/openfoam/OpenFOAM-5.0/etc/bashrc
+#source /home/fmunicch/OpenFOAM/OpenFOAM-5.0/etc/bashrc
+blockMesh
+snappyHexMesh -overwrite
+setInterfaceFoam
+interFoam | tee log

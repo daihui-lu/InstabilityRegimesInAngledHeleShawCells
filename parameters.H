@@ -1,0 +1,1 @@
+aveVel  0.000303;endChannel  0.000900;Amplitudes  49.000000;Amplitudes  40.000000;Amplitudes  48.000000;Amplitudes  46.000000;Amplitudes  50.000000;Amplitudes  41.000000;
